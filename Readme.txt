@@ -1,2 +1,2 @@
 Kalinina Anna Dmitrievna
-Ps-12
+PS-12
