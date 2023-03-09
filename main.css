@@ -2,6 +2,16 @@
     font-size: 20px;
 }
 
-.top-block__content {
-    background-color: #00000;
+.top-block {
+    background: #000000 url('../images/top-block-background.jpg');
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+}
+
+.top-block__text
+{
+    font-size: 17px;
+    font-family: 'Oxygen';
+    line-height: 1.18;
+    color: rgba(255, 255, 255, 0.63)
 }
