@@ -5,37 +5,90 @@
     <meta charset="UTF-8">
     <title>Frontend начало</title>
     <link href="css/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="top-block">
-        <header class="top-block__menu menu">
-            <span class="menu__logotype">Escape.</span>
-            <div class="menu__items">
-                <a href="#" class="menu_item">HOME</a>
-                <a href="#" class="menu_item">CATEGORIES</a>
-                <a href="#" class="menu_item">ABOUT</a>
-                <a href="#" class="menu_item">CONTACT</a>
-            </div>
-        </header>
-        <div class="top-block__content">
-            <h1 lang="en">Let's do it togever</h1>
-            <p class="top-block__text">We travel the world in search of stories. Come along the ride.</p>
-            <span>View Latest Posts</span>
+    <header class="header1">
+        <a class="menu__logotype">Escape.</a>
+        <div class="header1_menu">
+            <a title="Home Page" href="#" class="header_button_1">HOME</a>
+            <a title="Categories of posts" href="#" class="header_button_1">CATEGORIES</a>
+            <a title="About us" href="#" class="header_button_1">ABOUT</a>
+            <a title="Our contact" href="#" class="header_button_1">CONTACT</a>
         </div>
+    </header>
+    <div class="top-block__content">
+        <h1 class="top-block__text">Let's do it togever</h1>
+        <p class="top-block__undertext">We travel the world in search of stories. Come along the ride.</p>
+        <button class="top-block__button">View Latest Posts</button>
     </div>
-    <div class="submenu">
-        <a href="#" class="submenu__item">Nature</a>
-        <a href="#" class="submenu__item">Photography</a>
-        <a href="#" class="submenu__item">Relaxation</a>
-        <a href="#" class="submenu__item">Vacation</a>
-        <a href="#" class="submenu__item">Travel</a>
-        <a href="#" class="submenu__item">Adventure</a>
     </div>
-    <div class="featured-posts">
-        <h2 class="featured-posts__title">Featured Posts</h2>
-        <div class="featured-posts__item">
+    <section class="submenu">
+        <a title="Nature" href="#" class="submenu__item">Nature</a>
+        <a title="Photography" href="#" class="submenu__item">Photography</a>
+        <a title="Relaxation" href="#" class="submenu__item">Relaxation</a>
+        <a title="Vacation" href="#" class="submenu__item">Vacation</a>
+        <a title="Travel" href="#" class="submenu__item">Travel</a>
+        <a title="Adventure" href="#" class="submenu__item">Adventure</a>
+    </section>
+    <section>
+        <div class="featured-posts">
+            <h2 class="featured-posts__title">Featured Posts</h2>
+            <article class="header_button_1">
+                <h3 class="featured-headline">The Road Ahead</h3>
+                <p class="top-block__undertext">The road ahead might be paved - it might not be.</p>
+                <img src="image/IMAGE.png" alt="Northern lights" />
+                <img src="image/Vogels.jpg" alt="Mat Vogels" />
+                <span class="featured-headline1">Mat Vogels</span>
+                <span class="featured-headline1">September 25, 2015</span>
+            </article>
+            <article class="header_button_1">
+                <a title="Adventure" href="#" class="submenu__item">Adventure</a>
+                <h3 class="featured-headline">From Top Down</h3>
+                <p class="top-block__undertext">Once a year, go someplace you're never been before</p>
+                <img src="image/IMAGE1.png" alt="Flying light" />
+                <img src="image/Wong.jpg" alt="William Wong" />
+                <span class="featured-headline1">William Wong</span>
+                <span class="featured-headline1">September 25, 2015</span>
+            </article>
+        </div>
+        <div>
+            <h2 class="featured-posts__title">Most Recent</h2>
+            <article class="header_button_1">
+                <img src="image/IMAGE7.jpg" alt="Air balloon" />
+                <h3 class="featured-headline">Still Standing Tall</h3>
+                <p class="top-block__undertext">Life begins at the end of your comfort zone.</p>
+                <img src="image/Wong.jpg" alt="William Wong" />
+                <span class="featured-headline1">William Wong</span>
+                <span class="featured-headline1">9/25/2015</span>
+            </article>
+            <article class="header_button_1">
+                <img src="image/IMAGE2.png" alt="Bridge">
+                <h3 class="featured-headline">Sunny Side Up</h3>
+                <p class="top-block__undertext">No place is ever as bad as they tell you it’s going to be.</p>
+                <img src="image/Vogels.jpg" alt="Mat Vogels" />
+                <span class="featured-headline1">Mat Vogels</span>
+                <span class="featured-headline1">9/25/2015</span>
+            </article>
+            <article class="header_button_1">
+                <img src="image/IMAGE3.png" alt="River">
+                <h3 class="featured-headline">Water Falls</h3>
+                <p class="top-block__undertext">We travel not to escape life, but for life not to escape us.</p>
+                <img src="image/Vogels.jpg" alt="Mat Vogels">
+                <span class="featured-headline1">Mat Vogels</span>
+                <span class="featured-headline1">9/25/2015</span>
+            </article>
+            <article class="header_button_1">
+                <img src="image/IMAGE4.png" alt="Water">
+                <h3 class="featured-headline">Through the Mist</h3>
+                <p class="top-block__undertext">Travel makes you see what a tiny place you occupy in the world.</p>
+                <img src="image/Wong.jpg" alt="William Wong">
+                <span class="featured-headline1">William Wong</span>
+                <span class="featured-headline1">9/25/2015</span>
+            </article>
+        </div>
+    </section>
 
-        </div>
-    </div>
 </body>
