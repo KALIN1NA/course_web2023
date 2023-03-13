@@ -1,5 +1,19 @@
-* {
-    font-size: 20px;
+.header__button {
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.6000000238418579px;
+    text-align: left;
+}
+
+.menu__logotype {
+    font-family: Lora;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .top-block {
@@ -8,10 +22,76 @@
     background-size: 500px 400px;
 }
 
-.top-block__text
-{
-    font-size: 17px;
-    font-family: 'Oxygen';
-    line-height: 1.18;
-    color: rgba(255, 255, 255, 0.63)
+.top-block__text {
+    font-family: Lora;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 2px;
+    text-align: center;
 }
+
+.top-block__undertext {
+    font-family: Oxygen;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.top-block__content {
+    height: 500px;
+    front-family: 'Oxygen';
+    color: #FFFFFF;
+}
+
+
+.top-block__undertext {
+    font-family: Oxygen;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.submenu__item {
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #768088;
+
+}
+
+.featured-posts__title {
+    font-family: Oxygen;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+
+.featured-posts__headline {
+    font-family: Lora;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.featured-posts__underheadline {
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+
