@@ -1,6 +1,6 @@
 .head__logo {
     font-family: "Lora";
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 26px;
     color: #050505;
@@ -70,13 +70,13 @@
     color: #100f0f;
 }
 
-.featured-post__avatar {
+.featured-post__info-avatar {
     height: 26px;
     width: 26px;
     border-radius: 60px;
 }
 
-.featured-post__name {
+.featured-post__info-name {
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
@@ -102,7 +102,7 @@
     color: #100f0f;
 }
 
-.most-recent-posts__title {
+.most-recents__title {
     font-family: "Oxygen";
     font-size: 20px;
     font-weight: 400;
@@ -111,7 +111,7 @@
     color: #100f0f;
 }
 
-.most-recent-post__title {
+.most-recent__title {
     font-family: "Lora";
     font-size: 16px;
     font-weight: 400;
@@ -119,7 +119,7 @@
     color: #100f0f;
 }
 
-.most-recent-post__description {
+.most-recent__description {
     font-family: "Oxygen";
     font-size: 13px;
     font-weight: 400;
@@ -127,13 +127,13 @@
     color: #100f0f;
 }
 
-.most-recent-post__info-avatar {
+.most-recent__info-avatar {
     height: 26px;
     width: 26px;
     border-radius: 60px;
 }
 
-.most-recent-post__info-name {
+.most-recent__info-name {
     background-color: #FFFFFF;
     height: 35px;
     font-family: 'Oxygen';
@@ -144,7 +144,7 @@
     color: #100f0f;
 }
 
-.most-recent-post__date {
+.most-recent__date {
     font-family: "Oxygen";
     font-size: 12px;
     font-weight: 400;

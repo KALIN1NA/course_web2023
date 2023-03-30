@@ -3,7 +3,6 @@
     font-size: 26px;
     font-weight: 400;
     line-height: 26px;
-    text-align: left;
     color: #050505;
 }
 
@@ -12,7 +11,6 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
-    text-align: left;
     color: #050505;
 }
 
@@ -21,7 +19,6 @@
     font-size: 50px;
     font-weight: 400;
     line-height: 51px;
-    text-align: center;
     color: #100f0f;
 }
 
@@ -30,7 +27,6 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
-    text-align: center;
     color: #100f0f;
 }
 
@@ -39,7 +35,6 @@
     width: 960px;
     left: 240px;
     top: 140px;
-    border-radius: undefinedpx;
 }
 
 .foot__logo {
@@ -47,7 +42,6 @@
     font-size: 26px;
     font-weight: 400;
     line-height: 26px;
-    text-align: left;
     color: #100f0f;
 }
 
@@ -57,6 +51,5 @@
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 1px;
-    text-align: right;
     color: #100f0f;
 }
