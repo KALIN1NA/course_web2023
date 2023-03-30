@@ -1,10 +1,41 @@
+page
+{
+  margin: 0%;
+  width: 100%;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.head__img {
+    height: 100%;
+    width: 100%;
+}
+
 .head__logo {
     font-family: "Lora";
     font-size: 26px;
     font-weight: 400;
     line-height: 26px;
     text-align: left;
-    color: #050505;
+    color: #FFFFFF;
+    border-radius: 3px;
+    position: absolute;
+    padding: 10px;
+    left: 13%;
+}
+
+.head-menu {
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    padding: 10px;
+    right: 15%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .head-menu__link {
@@ -13,34 +44,59 @@
     font-weight: 400;
     line-height: 20px;
     text-align: left;
-    color: #050505;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-.top-block__title {
+.head-top-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-top-block__title {
     font-family: "Lora";
     font-size: 50px;
     font-weight: 400;
     line-height: 51px;
     text-align: center;
-    color: #100f0f;
+    color: #FFFFFF;
+    position: absolute;
+    left: 30%
 }
 
-.top-block__subtitle {
+.head-top-block__subtitle {
     font-family: "Oxygen";
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-    color: #100f0f;
+    color: #FFFFFFA1;
+    position: absolute;
+    left: 28%;
+    top: 55%;
 }
 
-.top-block__button {
+.head-top-block__button {
     font-family: "Oxygen";
     font-size: 13px;
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-    color: #100f0f;
+    color: #FFFFFF;
+    background: #a47217;
+    position: absolute;
+    left: 40%;
+    top: 67%;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: row;
+    position: relative; 
+    justify-content: space-around; 
+    padding: 10px; 
 }
 
 .submenu__link {
@@ -49,7 +105,18 @@
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-    color: #100f0f;
+    color: #768088;
+    text-decoration: none;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+
+.articles__featured-posts {
+    display: flex;
+    position: relative;
 }
 
 .featured-posts__title {
@@ -58,28 +125,25 @@
     font-weight: 400;
     line-height: 27px;
     text-align: center;
-    color: #100f0f;
+    color: #2E2E2E;
+    position: absolute;
+    left: 40%;
+    top: 8%;
 }
 
-.featured-post__the-road-ahead {
-    background-image: url(image/IMAGE.png);
-    background-repeat: no-repeat;
-    height: 280px;
-    width: 460px;
+.featured-posts__image-background {
+    margin-left: 20%;
 }
 
-.featured-post__from-top-down {
-    background-image: url(image/IMAGE1.png);
-    background-repeat: no-repeat;
-    height: 280px;
-    width: 460px;
-}
-
-.featured-post__image-author {
+.featured-posts__image-author {
     top: -9%;
     position: relative;
     margin-left: 25%;
     border-radius: 45%;
+}
+
+.featured-post {
+    position: relative;
 }
 
 .featured-post__title {
@@ -88,7 +152,10 @@
     font-weight: 400;
     line-height: 30px;
     text-align: left;
-    color: #100f0f;
+    color: #FFFFFF;
+    position: relative;
+    top: 55%;
+    margin-left: 23%; 
 }
 
 .featured-post__description {
@@ -97,24 +164,21 @@
     font-weight: 400;
     line-height: 25px;
     text-align: left;
-    color: #100f0f;
+    color: #FFFFFFB2;
+    position: relative;
+    top: 50%;
+    margin-left: 23%;
 }
 
-.featured-post__image-author {
-    height: 26px;
-    width: 26px;
-    margin-right: 10px;
-    border-radius: 60px;
-}
-
-.featured-post__name-author {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
+.featured-post__author {
+    font-family: "Oxygen";
     font-size: 12px;
+    font-weight: 400;
     line-height: 35px;
-    text-decoration: none;
-    color: rgba(15, 14, 14, 0.7);
+    text-align: left;
+    color: #FFFFFFB2;
+    position: relative;
+    top: -10%;
 }
 
 .featured-post__date {
@@ -123,7 +187,11 @@
     font-weight: 400;
     line-height: 35px;
     text-align: left;
-    color: #100f0f;
+    color: #FFFFFFB2;
+    position: relative;
+    margin-left: 65%;
+    top: -17%;
+    color: #999999;
 }
 
 .featured-post__mark {
@@ -132,7 +200,7 @@
     font-weight: 400;
     line-height: 13px;
     text-align: left;
-    color: #100f0f;
+    color: #FFFFFF;
 }
 
 .most-recents__title {
@@ -142,7 +210,7 @@
     line-height: 27px;
     letter-spacing: 2px;
     text-align: center;
-    color: #100f0f;
+    color: #2E2E2E;
 }
 
 .most-recent__title {
@@ -151,7 +219,7 @@
     font-weight: 400;
     line-height: 21px;
     text-align: left;
-    color: #100f0f;
+    color: #101315;
 }
 
 .most-recent__description {
@@ -160,26 +228,16 @@
     font-weight: 400;
     line-height: 19px;
     text-align: left;
-    color: #100f0f;
+    color: #7A7A7A;
 }
 
-.most-recent__image-author {
-    height: 26px;
-    width: 26px;
-    border-radius: 60px;
-}
-
-.most-recent__name-author {
-    background-color: #FFFFFF;
-    border-radius: 3px;
-    padding-left: 10px;
-    height: 35px;
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
+.most-recent__author {
+    font-family: "Oxygen";
     font-size: 11px;
+    font-weight: 400;
     line-height: 35px;
-    color: #100f0f;
+    text-align: left;
+    color: #999999;
 }
 
 .most-recent__date {
@@ -188,7 +246,7 @@
     font-weight: 400;
     line-height: 35px;
     text-align: left;
-    color: #100f0f;
+    color: #999999;
 }
 
 .foot__logo {
@@ -197,7 +255,7 @@
     font-weight: 400;
     line-height: 26px;
     text-align: left;
-    color: #100f0f;
+    color: #FFFFFF;
 }
 
 .foot-menu__link {
@@ -207,5 +265,10 @@
     line-height: 26px;
     letter-spacing: 1px;
     text-align: right;
-    color: #100f0f;
+    color: #FFFFFF99;
+}
+
+.foot__image-background {
+    height: 100%;
+    width: 100%;
 }
