@@ -75,13 +75,6 @@
     width: 460px;
 }
 
-.featured-post__image-author {
-    top: -9%;
-    position: relative;
-    margin-left: 25%;
-    border-radius: 45%;
-}
-
 .featured-post__title {
     font-family: "Lora";
     font-size: 27px;
@@ -100,14 +93,14 @@
     color: #100f0f;
 }
 
-.featured-post__image-author {
+.featured-post__info-avatar {
     height: 26px;
     width: 26px;
     margin-right: 10px;
     border-radius: 60px;
 }
 
-.featured-post__name-author {
+.featured-post__info-name {
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
@@ -163,13 +156,13 @@
     color: #100f0f;
 }
 
-.most-recent__image-author {
+.most-recent__info-avatar {
     height: 26px;
     width: 26px;
     border-radius: 60px;
 }
 
-.most-recent__name-author {
+.most-recent__info-name {
     background-color: #FFFFFF;
     border-radius: 3px;
     padding-left: 10px;
