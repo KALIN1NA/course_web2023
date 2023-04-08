@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    <h1>{{ .Title }}</h1>
+    <h2>{{ .Subtitle }}</h2>
+    <img src="static/img/background.png"/>
+    <div>
+        <h2>Featured Posts</h2>
+        {{ range .FeaturedPosts }}
+            <div>
+                <h3>{{ .Title }}</h3>
+                <h4>{{ .Subtitle }}</h4>
+                <span>{{ .Author }}</span>
+                <span>{{ .PublishDate }}</span>
+            </div>
+        {{ end }}
+     </div>
+</body>

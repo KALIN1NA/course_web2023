@@ -1,0 +1,186 @@
+.page {
+    margin: 0%;
+    width: 100%;
+}
+
+.head {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.head__logo {
+    font-family: "Lora";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #030303;
+    text-align: left;
+}
+
+.head-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    align-items: flex-end;
+}
+
+.head-menu__link {
+    font-family: "Oxygen";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #030303;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-block {
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.top-block__title {
+    font-family: "Lora";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 51px;
+    color: #0a0a0a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.top-block__subtitle {
+    font-family: "Oxygen";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #080101a1;
+    text-align: center;
+}
+
+.top-block__image {
+    width: 100%;
+}
+
+.post__paragraph {
+    font-family: Oxygen;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #101315;
+}
+
+.basement {
+    display: flex;
+    flex-direction: column;
+    background-image: url(image/IMAGE10.png);
+    background-size: cover;
+}
+
+.feedback-form {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.feedback-form__title {
+    font-family: Oxygen;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    font: 'Oxygen';
+    color: #EFEFEF;
+    border-bottom: 1px solid #DEDEDE;
+    display: flex;
+    flex-direction: column;
+    margin: 81px 0px 17px 0;
+    margin-bottom: 17px;
+}
+
+.feedback-form__button {
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    height: 51px;
+    margin-bottom: 90px;
+}
+
+.feedback-form__email {
+    width: 370px;
+    background: #FFFFFF;
+    border-radius: 3px 0px 0px 3px;
+    border: none;
+    padding-left: 35px;
+}
+
+.feedback-form__send-email {
+    background-color: #FFFFFF47;
+    padding: 18px 44px;
+    border-radius: 3px;
+}
+
+.foot {
+    width: 100%;
+    height: 89px;
+    background: rgba(35, 47, 56, 0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.foot__logo {
+    font-family: 'Lora';
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 31px 0px 32px 250px;
+}
+
+.foot-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    margin: 31px 250px 32px 0px;
+}
+
+.foot-menu__link {
+    height: 26px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
