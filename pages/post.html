@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>theroadahead</title>
+  <link href="../static/css/post.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="page">
+    <header class="menu">
+      <span class="menu__logo">Escape.</span>
+      <nav class="menu__items">
+        <a href="#" class="menu__item">HOME</a>
+        <a href="#" class="menu__item">CATEGORIES</a>
+        <a href="#" class="menu__item">ABOUT</a>
+        <a href="#" class="menu__item">CONTACT</a>
+      </nav>
+    </header>
+  
+  <div class="content">
+    <h1 class="content__title">{{ .Title }}</h1>
+    <p class="content__subtitle">{{ .Subtitle }}</p>
+    <img class="content__image" src="{{ .PostImg }}" alt="Northern lights">
+      <p class="content__text">{{ .PostText }}</p>
+  </div>
+
+  <div class="low">
+    <div class="contact-form">
+      <span class="contact-form__call-to-action">Stay in Touch</span>
+      <form class="contact-form__button" action="#">
+        <input class="contact-form__email" type="email" name="email" placeholder="Enter your email address">
+        <input class="contact-form__send-email" type="submit" value="Submit">
+      </form>
+    </div>
+    
+    <footer class="menu menu_footer">
+      <span class="menu__logo menu__logo_footer">Escape.</span>
+        <nav class="menu__items">
+          <a href="#" class="menu__item menu__item_footer">HOME</a>
+          <a href="#" class="menu__item menu__item_footer">CATEGORIES</a>
+          <a href="#" class="menu__item menu__item_footer">ABOUT</a>
+          <a href="#" class="menu__item menu__item_footer">CONTACT</a>
+        </nav>
+    </footer>
+  </div>  
+</body>
+</html>

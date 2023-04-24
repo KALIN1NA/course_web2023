@@ -1,0 +1,162 @@
+.page
+{
+    margin: 0;
+    width: 100%;
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 270px 0 250px;
+}
+
+.menu__logo
+{
+    font: 400 26px 'Lora';
+    color: #2E2E2E;
+}
+
+.menu__logo_footer
+{
+    color: rgb(255, 255, 255);
+}
+
+.menu__items
+{
+    display: flex;
+    align-items: flex-end;
+    width: 376px;
+    justify-content: space-between;
+}
+
+.menu__item
+{
+    font: 400 12px/1.67 'Oxygen';
+    letter-spacing: 0.6px;
+    color: #2E2E2E;
+    text-decoration: none;
+}
+
+.menu__item_footer
+{
+    color: rgb(255, 255, 255);
+}
+
+.content 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__title
+{
+    font: 400 50px/1.02 'Lora';
+    letter-spacing: 2px;
+    color: #2E2E2E;
+    margin-top: 109px;
+    margin-bottom: 0;
+}
+
+.content__subtitle
+{
+    font: 400 17px/1.18 'Oxygen';
+    color: rgba(46, 46, 46, 0.63);
+    margin: 20px 0 113px 0;
+}
+
+.content__image
+{
+    margin-bottom: 140px;
+    width: 100%;
+}
+
+.content__text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 67%;
+    font: 400 24px/1.46 'Oxygen';
+    color: #101315;
+    margin: 0;
+    margin-bottom: 150px;
+    white-space: pre-line;
+}
+
+.low
+{
+    background: url(../images/form_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form__call-to-action
+{
+    font: 400 25px/1.20 'Oxygen';
+    color: rgba(239, 239, 239, 1);
+    text-align: center;
+    margin-top: 81px;
+}
+
+.contact-form__call-to-action::after
+{
+    content: "";
+    display: block;
+    width: 188px;
+    height: 1px;
+    background-color: rgba(222, 222, 222, 1);
+    align-self: center;
+    margin-top: 17px;
+    margin-bottom: 20px;
+}
+
+.contact-form__button
+{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: 90px;
+}
+
+.contact-form__email
+{
+    font: 400 12px/1.17 'Roboto';
+    color: #817F83;
+    width: 375px;
+    height: 50px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 3px 0px 0px 3px;
+    padding: 0 0 0 35px;
+}
+
+.contact-form__send-email
+{
+    font: 400 12px/1.17 'Roboto';
+    color: #F8F8F8;
+    width: 125px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.28);
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.menu_footer
+{
+    background: rgba(35, 47, 56, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 20px 270px 32px 250px;
+}
