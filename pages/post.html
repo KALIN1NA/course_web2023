@@ -2,26 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>theroadahead</title>
-  <link href="../static/css/post.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&family=Roboto&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
 </head>
 <body class="page">
     <header class="menu">
       <span class="menu__logo">Escape.</span>
       <nav class="menu__items">
-        <a href="#" class="menu__item">HOME</a>
-        <a href="#" class="menu__item">CATEGORIES</a>
-        <a href="#" class="menu__item">ABOUT</a>
-        <a href="#" class="menu__item">CONTACT</a>
+        <a href="#" class="menu__item" href="https://www.google.com/">HOME</a>
+        <a href="#" class="menu__item" href="https://www.google.com/">CATEGORIES</a>
+        <a href="#" class="menu__item" href="https://www.google.com/">ABOUT</a>
+        <a href="#" class="menu__item" href="https://www.google.com/">CONTACT</a>
       </nav>
     </header>
   
   <div class="content">
-    <h1 class="content__title">{{ .Title }}</h1>
-    <p class="content__subtitle">{{ .Subtitle }}</p>
-    <img class="content__image" src="{{ .PostImg }}" alt="Northern lights">
-      <p class="content__text">{{ .PostText }}</p>
+    <h2 class="content__title">{{ .Title }}</h2>
+    <span class="content__subtitle">{{ .Subtitle }}</span>
+    <img class="content__image {{ .ImgModFP }}" src="{{ .ImgModifier }}" alt="Northern lights">
+      <div class="content__text">
+        {{ .Content }}
+      </div>
   </div>
 
   <div class="low">

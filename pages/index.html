@@ -26,8 +26,8 @@
       </div>
     </div>
     <div class="top-block">
-      <h1 class="top-block__title">Let's do it togever</h1>
-      <p class="top-block__subtitle">We travel the world in search of stories. Come along the ride.</p>
+      <h1 class="top-block__title">{{ .Title }}</h1>
+      <p class="top-block__subtitle">{{ .Subtitle }}</p>
       <button class="top-block__button">View Latest Posts</button>
     </div>
   </header>
@@ -46,58 +46,61 @@
       <h2 class="featured-posts__title">Featured Posts</h2>
       <div class="featured-posts__content">
         {{ range .FeaturedPosts }}
-        <div class="featured-post {{ .ImgModifier }}">
-          <span><a class="featured-post__title" href="post.html">{{ .Title }}</a></span>
+        <div class="featured-post {{ .Image_urlFP }}">
+          <span><a class="featured-post__title" href="post/{{ .PostID }}">{{ .Title }}</a></span>
           <span class="featured-post__description">{{ .Subtitle }}</span>
-          <div class="featured-post__info  info">
-            <img class="info__author-image" src="{{ .AuthorImg }}" alt="{{ .Author }}">
-            <a class="info__author-name" href="https://www.google.com/">{{ .Author }}</a>
-          </div>
-          <span class="info__author-date">{{ .PublishData }}</span>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-
-    <div class="most-recent-posts">
-      <h2 class="most-recent-posts__title">Most Recent</h2>
-      <div class="most-recent-posts__section">
-        {{ range .MostRecentPosts }}
-        <div class="most-recent-post">
-          <img class="most-recent-post__picture" src="{{ .Image }}" alt="{{ .Title }}">
-          <div class="most-recent-post__description description">
-            <span class="description__title">{{ .Title }}</span>
-            <span class="description__subtitle">{{ .Subtitle }}</span>
-          </div>
-          <div class="most-recent-post__info">
-            <img class="most-recent-post__avatar" src="{{ .AuthorImg }}" width="24" height="24" alt="{{ .Author }}">
-            <a class="most-recent-post__name" href="https://www.google.com/">{{ .Author }}</a>
-            <span class="most-recent-post__date">{{ .PublishData }}</span>
+          <div class="featured-post__info">
+            <div class="featured-post__author-info">
+              <img class="author-info__avatar-featured-post" src="{{ .AuthorImg }}" alt="{{ .Author }}">
+              <a class="author-info__name-featured-post" href="https://www.google.com/">{{ .Author }}</a>
+            </div>
+            <span class="featured-post__date">{{ .PublishData }}</span>
           </div>
         </div>
         {{ end }}
       </div>
     </div>
-  </div>
 
-  <div class="basement">
-    <div class="basement__contact-form contact-form">
-      <h2 class="contact-form__call-to-action">Stay in Touch</h2>
-      <form class="contact-form__button" action="#">
-        <input class="contact-form__email" type="email" name="email" placeholder="Enter your email address">
-        <input class="contact-form__send-email" type="submit" value="Submit">
-      </form>
+      <div class="most-recent-posts">
+        <h2 class="most-recent-posts__title">Most Recent</h2>
+        <div class="most-recent-posts__section">
+          {{ range .MostRecentPosts }}
+          <div class="most-recent-post">
+            <img class="most-recent-post__picture" src="{{ .Image }}" alt="{{ .Title }}">
+            <a href="/post/{{ .PostID }}">View</a>
+            <div class="most-recent-post__description description">
+              <span class="description__title">{{ .Title }}</span>
+              <span class="description__subtitle">{{ .Subtitle }}</span>
+            </div>
+            <div class="most-recent-post__info">
+              <img class="most-recent-post__avatar" src="{{ .AuthorImg }}" width="24" height="24" alt="{{ .Author }}">
+              <a class="most-recent-post__name" href="https://www.google.com/">{{ .Author }}</a>
+              <span class="most-recent-post__date">{{ .PublishData }}</span>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
     </div>
-    <footer class="footer">
-      <span class="footer__logo">Escape.</span>
-      <nav class="footer-nav">
-        <a class="footer-nav__link" href="https://www.google.com/">HOME</a>
-        <a class="footer-nav__link" href="https://www.google.com/">CATEGORIES</a>
-        <a class="footer-nav__link" href="https://www.google.com/">ABOUT US</a>
-        <a class="footer-nav__link" href="https://www.google.com/">CONTACT</a>
-      </nav>
-    </footer>
-  </div>
+
+    <div class="basement">
+      <div class="basement__contact-form contact-form">
+        <h2 class="contact-form__call-to-action">Stay in Touch</h2>
+        <form class="contact-form__button" action="#">
+          <input class="contact-form__email" type="email" name="email" placeholder="Enter your email address">
+          <input class="contact-form__send-email" type="submit" value="Submit">
+        </form>
+      </div>
+      <footer class="footer">
+        <span class="footer__logo">Escape.</span>
+        <nav class="footer-nav">
+          <a class="footer-nav__link" href="https://www.google.com/">HOME</a>
+          <a class="footer-nav__link" href="https://www.google.com/">CATEGORIES</a>
+          <a class="footer-nav__link" href="https://www.google.com/">ABOUT US</a>
+          <a class="footer-nav__link" href="https://www.google.com/">CONTACT</a>
+        </nav>
+      </footer>
+    </div>
 </body>
 
 </html>

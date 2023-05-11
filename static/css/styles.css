@@ -6,7 +6,7 @@
 
 .head
 {
-    background-image: url(../images/canyon.jpg);
+    background-image: url(/static/images/top_block_background.jpg);
     background-repeat: no-repeat;
     background-size: 100% 500px;
     width: 100%;
@@ -123,37 +123,36 @@
 
 .main
 {
-    background-color: #F7F7F7;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #F7F7F7;
+    padding-top: 60px;
+    padding-bottom: 60spx;
 }
 
 .featured-posts
 {
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   margin-left: 270px;
-   margin-right: 270px;
-   padding-top: 60px;
-   gap: 43px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .featured-posts__title
 {
-    font: 400 20px/1.35 "Oxygen";
-    font-style: normal;
-    letter-spacing: 2px;
-    color: #2e2e2e;
+    font-family: "Oxygen";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
     text-align: center;
+    color: #2E2E2E;
     text-decoration: underline;
     text-decoration-color: #DEDEDE;
     text-underline-offset: 16px;
-    align-self: center; 
-    padding: 0px 0px 0px 0px;  
-    margin: 0; 
+    align-self: center;
+    letter-spacing: 2px;
 }
 
 .featured-posts__content
@@ -161,7 +160,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px;
 }
 
 .featured-post
@@ -175,7 +174,7 @@
 
 .featured-post_northbright
 {
-    background: url("../images/northbroght.png");
+    background: url("/static/images/the_road_ahead.jpg");
     background-repeat: no-repeat;
     height: 280px;
     width: 460px;
@@ -183,32 +182,28 @@
 
 .featured-post__title
 {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
+    font-family: "Lora";
     font-size: 27px;
+    font-weight: 400;
     line-height: 30px;
     color: #FFFFFF;
     text-decoration: none;
-    padding: 0px 220px 0px 20px;
-    margin-bottom: 8px;
+    margin: 50px 20px 6px 15px;
 }
 
 .featured-post__description
 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
+    font-family: "Oxygen";
     font-size: 14px;
+    font-weight: 400;
     line-height: 25px;
     color: rgba(255, 255, 255, 0.7);
-    padding: 0px 100px 0px 20px;
-    margin-bottom: 12px;
+    margin: 6px 100px 15px 20px;
 }
 
 .featured-post__from-top-down
 {
-    background: url("../images/chineselights.png");
+    background: url("/static/images/from_top_down.png");
     background-repeat: no-repeat;
     height: 280px;
     width: 460px;
@@ -222,54 +217,49 @@
     padding: 0px 10px 20px 20px;
 }
 
-.featured-post__info
-{
+.featured-post__author-info {
     display: flex;
     flex-direction: row;
 }
 
-.info__author-image
-{
+.author-info__avatar-featured-post {
     height: 26px;
     width: 26px;
     margin-right: 10px;
     border-radius: 60px;
 }
 
-.info__author-name
-{
+.author-info__name-featured-post {
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 35px;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
+    color: #FFFFFFB2;
 }
 
-.info__author-date
-{
+.featured-post__date {
     width: 108px;
     height: 35px;
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
+    font-family: "Oxygen";
     font-size: 12px;
+    font-weight: 400;
     line-height: 35px;
     color: rgba(255, 255, 255, 0.7);
 }
 
 .most-recent-posts
 {
-    background-color: #F7F7F7;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 252px;
-    margin-right: 252px;
-    margin-bottom: 180px;
-    padding-top: 60px;
-    row-gap: 40px;
+    justify-content: center;
+    row-gap: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 108px;
+    margin-top: 40px;
 }
 
 .most-recent-posts__title
@@ -455,7 +445,7 @@
 
 .basement
 {
-    background-image: url(../images/footer2.png);
+    background-image: url(/static/images/form_background.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
