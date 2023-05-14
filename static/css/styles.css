@@ -331,6 +331,11 @@
     width: 296px;
 }
 
+.description__title
+{
+    text-decoration: none;
+}
+
 .description__subtitle
 {
     font-family: 'Oxygen';

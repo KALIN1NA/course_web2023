@@ -46,8 +46,8 @@
       <h2 class="featured-posts__title">Featured Posts</h2>
       <div class="featured-posts__content">
         {{ range .FeaturedPosts }}
-        <div class="featured-post {{ .Image_urlFP }}">
-          <span><a class="featured-post__title" href="post/{{ .PostID }}">{{ .Title }}</a></span>
+        <div class="featured-post {{ .ImageUrlFP }}">
+          <span><a class="featured-post__title" href="/post/{{ .PostID }}">{{ .Title }}</a></span>
           <span class="featured-post__description">{{ .Subtitle }}</span>
           <div class="featured-post__info">
             <div class="featured-post__author-info">
@@ -66,10 +66,9 @@
         <div class="most-recent-posts__section">
           {{ range .MostRecentPosts }}
           <div class="most-recent-post">
-            <img class="most-recent-post__picture" src="{{ .Image }}" alt="{{ .Title }}">
-            <a href="/post/{{ .PostID }}">View</a>
+            <img class="most-recent-post__picture" src="{{ .ImageUrlMr }}" alt="{{ .Title }}">
             <div class="most-recent-post__description description">
-              <span class="description__title">{{ .Title }}</span>
+              <span><a class="description__title" href="/post/{{ .PostID }}">{{ .Title }}</a></span>
               <span class="description__subtitle">{{ .Subtitle }}</span>
             </div>
             <div class="most-recent-post__info">

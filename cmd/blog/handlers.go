@@ -23,9 +23,8 @@ type postPageData struct{
 	Title       string `db:"title"`
 	Subtitle    string `db:"subtitle"`
 	Content     string `db:"content"`
-	ImgModifier string `db:"image_url"`
+	ImageUrl   string `db:"image_url"`
 	Author      string `db:"author"`
-	Image_urlFP string `db:"image_urlFP"`
 }
 
 type featuredPostData struct {
@@ -35,7 +34,7 @@ type featuredPostData struct {
 	Author      string `db:"author"`
 	AuthorImg   string `db:"author_url"`
 	PublishData string `db:"publish_date"`
-	Image_urlFP string `db:"image_urlFP"`
+	ImageUrlFP  string `db:"image_urlFP"`       //name
 }
 
 type mostRecentPostData struct {
@@ -45,28 +44,28 @@ type mostRecentPostData struct {
 	Author      string `db:"author"`
 	AuthorImg   string `db:"author_url"`
 	PublishData string `db:"publish_date"`
-	Image       string `db:"image_url"`
+	ImageUrlMr      string `db:"image_url"`           //name
 }
 
 func index(db *sqlx.DB) func(w http.ResponseWriter, r *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
 		featuredPostsData, err := featuredPosts(db)
 		if err != nil {
-			http.Error(w, "Internal Server Error1", 500)
+			http.Error(w, "Internal Server Error", 500)
 			log.Println(err)
 			return
 		}
 
 		mostRecentPostsData, err := mostRecentPosts(db)
 		if err != nil {
-			http.Error(w, "Internal Server Error2", 500)
+			http.Error(w, "Internal Server Error", 500)
 			log.Println(err)
 			return
 		}
 
 		ts, err := template.ParseFiles("pages/index.html")
 		if err != nil {
-			http.Error(w, "Internal Server Error3", 500)
+			http.Error(w, "Internal Server Error", 500)
 			log.Println(err)
 			return
 		}
@@ -80,7 +79,7 @@ func index(db *sqlx.DB) func(w http.ResponseWriter, r *http.Request) {
 
 		err = ts.Execute(w, data)
 		if err != nil {
-			http.Error(w, "Internal Server Error4", 500)
+			http.Error(w, "Internal Server Error", 500)
 			log.Println(err)
 			return
 		}
@@ -139,8 +138,7 @@ func postByID(db *sqlx.DB, postID int) (postPageData, error) {
 			subtitle,
 			content,
 			image_url,
-			author,
-			image_urlFP
+			author
 		FROM 
 			post
 		WHERE

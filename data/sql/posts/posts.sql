@@ -1,4 +1,3 @@
-select *from post
 
 INSERT INTO 
 	 post  
@@ -9,6 +8,7 @@ INSERT INTO
         author_url,
         publish_date,
         image_urlFP,
+        image_url,
         content,
         featured
     )
@@ -19,6 +19,7 @@ VALUES (
         '/static/images/mat_vogels.png',
         'September 25, 2015',
         'featured-post_northbright',
+        '/static/images/the_road_ahead.jpg',
         'Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped by a recent wind of their white covering of frost, and they seemed to lean towards each other, black and ominous, in the fading light. A vast silence reigned over the land. The land itself was a desolation, lifeless, without movement, so lone and cold that the spirit of it was not even that of sadness. There was a hint in it of laughter, but of a laughter more terrible than any sadness—a laughter that was mirthless as the smile of the sphinx, a laughter cold as the frost and partaking of the grimness of infallibility. It was the masterful and incommunicable wisdom of eternity laughing at the futility of life and the effort of life. It was the Wild, the savage, frozen-hearted Northland Wild.
 
 But there was life, abroad in the land and defiant. Down the frozen waterway toiled a string of wolfish dogs. Their bristly fur was rimed with frost. Their breath froze in the air as it left their mouths, spouting forth in spumes of vapour that settled upon the hair of their bodies and formed into crystals of frost. Leather harness was on the dogs, and leather traces attached them to a sled which dragged along behind. The sled was without runners. It was made of stout birch-bark, and its full surface rested on the snow. The front end of the sled was turned up, like a scroll, in order to force down and under the bore of soft snow that surged like a wave before it. On the sled, securely lashed, was a long and narrow oblong box. There were other things on the sled—blankets, an axe, and a coffee-pot and frying-pan; but prominent, occupying most of the space, was the long and narrow oblong box.
@@ -38,6 +39,7 @@ INSERT INTO
         author_url,
         publish_date,
         image_urlFP,
+        image_url,
         content,
         featured
     )
@@ -48,6 +50,7 @@ VALUES (
         '/static/images/william_wong.png',
         'September 25, 2015',
         'featured-post__from-top-down',
+        '/static/images/from_top_down.png',
         'As a traveler, I firmly believe that the best way to learn about the world is by experiencing it firsthand. Every time I embark on a new journey, I am reminded of how much there is to see and learn in this world. Recently, I went on a trip that took me from the top of a mountain down to the bottom of a valley. It was an exhilarating journey that left me with memories I will cherish for a lifetime.
 
 The journey began at the top of a mountain where I found myself surrounded by snow-capped peaks and breathtaking views. I had always dreamed of standing on top of a mountain and taking in the beauty of the world below. As I looked out at the vast expanse of wilderness, I felt a sense of awe and wonder. It was a moment of pure serenity that filled me with a sense of gratitude for the opportunity to experience such a beautiful place.
@@ -262,4 +265,3 @@ Trying something new can also mean stepping out of your comfort zone. During my 
 Traveling is not just about ticking off places from a bucket list, it''s about experiencing new things and pushing your boundaries. Trying something new can be scary, but it can also be incredibly rewarding. So, the next time you travel, make it a point to try something new. You never know, it might just become your next favorite thing.',
         0
     );
-

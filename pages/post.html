@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escape</title>
-  <link rel="stylesheet" type="text/css" href="/static/css/style.css" >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="/static/css/post.css" >
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
 </head>
@@ -25,11 +22,15 @@
   <div class="content">
     <h2 class="content__title">{{ .Title }}</h2>
     <span class="content__subtitle">{{ .Subtitle }}</span>
-    <img class="content__image {{ .ImgModFP }}" src="{{ .ImgModifier }}" alt="Northern lights">
-      <div class="content__text">
+  </div>
+  <article class="posts-block">
+    <img class="posts-block__image" src="{{ .ImageUrl }}">
+    <div class="posts-block__paragraphs-borders">
+      <div class="posts-block__paragraph">
         {{ .Content }}
       </div>
-  </div>
+    </div>
+  </article>
 
   <div class="low">
     <div class="contact-form">
