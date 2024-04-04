@@ -127,7 +127,6 @@ func post(db *sqlx.DB) func(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		log.Println("Request completed successfully")
 	}
 }
 
